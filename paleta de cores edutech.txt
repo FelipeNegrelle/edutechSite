@@ -1,0 +1,10 @@
+#29407d azul escuro
+#e7f1eb branco
+#72bd74 verde claro
+#6ebf6c verde
+#638792 acinzentado 1
+#656a96 acinzentado 2
+#5e91c7 azul claro 1
+#0a5fad azul claro 2
+#091a4f azul escuro
+
