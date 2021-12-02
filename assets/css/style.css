@@ -1,0 +1,65 @@
+body { 
+    display: flex;
+    font-size: 5rem;
+    background-image: linear-gradient(to bottom, var(--azul-claro1), var(--azul-escuro));
+    background-repeat: no-repeat;
+    flex-direction: column;
+    height: 100%;
+}
+/* estilos do cabeçalho com flex */
+.cabecalho {
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-between; 
+    padding: 2rem;
+}
+.logo {
+    width: 20rem;
+    height: 20rem;
+}
+.header__nav {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.header__nav-item {
+    padding: 1rem;
+}
+
+/* estilos relacionados a parte principal da página */
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__titulo {
+    padding: 5rem;
+    font-weight: 700;
+}
+
+.texto {
+    background-color: var(--branco);
+    color: #000;
+    width: 80rem;
+    border-radius: 3rem;
+    padding: 4rem;
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+.texto__titulo {
+    font-size: 4rem;
+    color: var(--verde);
+    border-left: 1rem solid var(--verde);
+    padding: 2rem;
+    font-weight: 700;
+    margin: 2rem;
+}

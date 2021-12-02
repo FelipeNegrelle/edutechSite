@@ -1,0 +1,22 @@
+:root {
+    --azul-escuro: #29407d;
+    --azul-claro1: #5e91c7;
+    --azul-claro2: #0a5fad;
+    --azul-escuro2: #091a4f;
+    --verde: #6ebf6c;
+    --verde-claro: #72bd74;
+    --cinza1: #638792;
+    --cinza2: #656a96;
+    --branco: #e7f1eb;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    color: var(--branco);
+    box-sizing: border-box;
+}
+
+a, a:visited, a:link {
+    color: var(--branco);
+}
