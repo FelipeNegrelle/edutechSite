@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edutech | Página principal</title>
-    
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/felipenegrelle/reset.css@e5bfbdc/reset.css">
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/images/favicon.ico">
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header class="header">
         <img src="/assets/images/logo.svg" alt="logo do projeto" class="logo">
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -30,18 +31,86 @@
         </nav>
     </header>
 
-    <main class="principal">
-        <h1 class="principal__titulo">Edutech: mudando a vida de jovens programadores!</h1>
-        <section class="texto">
-            <div class="texto__titulo">
+    <main class="main">
+        <h1 class="main__titulo">Edutech: mudando a vida de jovens programadores!</h1>
+        <section class="text">
+            <div class="text__titulo">
                 <h1>O projeto Edutech</h1>
             </div>
-                <p>
-                    Pautada nas “Diretrizes para Ensino de Computação na Educação Básica”, da Sociedade Brasileira de 
-Computação, e considerando as Competências Gerais da BNCC para a formação do jovem do século XXI, a Secretaria de Estado da Educação e do Esporte, visando a compreensão plena do mundo, cada vez mais conectado e imerso em tecnologias digitais, oportuniza a aprendizagem da programação a crianças, adolescentes e jovens matriculados nas instituições de ensino da Rede Pública Estadual do Paraná, aumentando a capacidade de aprendizagem e resolução de problemas, promovendo novas formas de expressão e pensamento com a utilização de linguagem digital, exercitando a curiosidade intelectual, o pensamento crítico, científico e a criatividade e dando apoio ao aprendizado das demais disciplinas.
-                </p>
+            <p>
+                Pautada nas “Diretrizes para Ensino de Computação na Educação Básica”, da Sociedade Brasileira de Computação, e considerando as Competências Gerais da BNCC para a formação do jovem do século XXI, a Secretaria de Estado da Educação e do Esporte, visando
+                a compreensão plena do mundo, cada vez mais conectado e imerso em tecnologias digitais, oportuniza a aprendizagem da programação a crianças, adolescentes e jovens matriculados nas instituições de ensino da Rede Pública Estadual do Paraná,
+                aumentando a capacidade de aprendizagem e resolução de problemas, promovendo novas formas de expressão e pensamento com a utilização de linguagem digital, exercitando a curiosidade intelectual, o pensamento crítico, científico e a criatividade
+                e dando apoio ao aprendizado das demais disciplinas.
+            </p>
+        </section>
+
+        <section class="trails">
+            <div class="trails__cards">
+                <h1 class="trails__title">Trilha Front-End</h1>
+                <ul class="trails__list">
+                    <li class="trails__list-items">Html, Css e JS</li>
+                    <li class="trails__list-items">Lógica de programação</li>
+                    <li class="trails__list-items">Desenvolvimento de sites</li>
+                </ul>
+                <div class="trails__images" id="three">
+                    <img src="assets/images/html-logo.png" alt="logo html" class="trails__images-items" draggable="false">
+                    <img src="assets/images/css-logo.png" alt="logo css" class="trails__images-items" draggable="false">
+                    <img src="assets/images/js-logo.png" alt="logo js" class="trails__images-items" draggable="false">
+                </div>
+            </div>
+            <div class="trails__cards">
+                <h1 class="trails__title">Trilha Games</h1>
+                <ul class="trails__list">
+                    <li class="trails__list-items">Scratch</li>
+                    <li class="trails__list-items">Projetos estimulantes</li>
+                    <li class="trails__list-items">Criatividade</li>
+                </ul>
+                <div class="trails__images">
+                    <img src="assets/images/scratch-logo.png" alt="logo scratch" class="trails__images-items" id="scratch" draggable="false">
+                </div>
+            </div>
+            <div class="trails__cards">
+                <h1 class="trails__title">Trilha Back-End</h1>
+                <ul class="trails__list">
+                    <li class="trails__list-items">Python</li>
+                    <li class="trails__list-items">Ánalise de dados</li>
+                    <li class="trails__list-items">Geração de dados</li>
+                </ul>
+                <div class="trails__images">
+                    <img src="assets/images/python-logo.png" alt="logo python" class="trails__images-items" id="python" draggable="false">
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="companies">
+            <a href="https://www.celepar.pr.gov.br/" class="companies__links">
+                <img src="assets/images/celepar.png" alt="logo celepar">
+            </a>
+            <a href="https://www.parana.pr.gov.br/" class="companies__links">
+                <img src="assets/images/parana.png" alt="logo parana">
+            </a>
+            <a href="https://www.pia.pr.gov.br/" class="companies__links">
+                <img src="assets/images/pia.png" alt="logo pia">
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="https://twitter.com/seedparana" class="social__links">
+                <img src="assets/images/twitter.svg" alt="logo tweeter">
+            </a>
+
+            <a href="https://www.instagram.com/seedparana/" class="social__links">
+                <img src="assets/images/inta.svg" alt="logo intagram">
+            </a>
+
+            <a href="https://www.facebook.com/EducacaoParana" class="social__links">
+                <img src="assets/images/face.svg" alt="logo facebook">
+            </a>
+        </div>
+    </footer>
 
 </body>
 

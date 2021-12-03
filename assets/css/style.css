@@ -1,65 +1,196 @@
-body { 
+body {
     display: flex;
     font-size: 5rem;
     background-image: linear-gradient(to bottom, var(--azul-claro1), var(--azul-escuro));
+    /* background-color: #3f4123; */
     background-repeat: no-repeat;
     flex-direction: column;
     height: 100%;
 }
+
+
 /* estilos do cabeçalho com flex */
-.cabecalho {
+
+.header {
     background-color: var(--verde);
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 2rem;
+    font-size: 3rem;
 }
+
 .logo {
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
 }
+
 .header__nav {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .header__nav-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
+
 .header__nav-item {
     padding: 1rem;
 }
 
+
 /* estilos relacionados a parte principal da página */
-.principal {
+
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 
-.principal__titulo {
+.main__titulo {
+    font-size: 3rem;
     padding: 5rem;
     font-weight: 700;
 }
 
-.texto {
+.text {
     background-color: var(--branco);
     color: #000;
-    width: 80rem;
+    width: 40rem;
     border-radius: 3rem;
-    padding: 4rem;
-    font-size: 3rem;
+    padding: 3rem;
+    font-size: 1.5rem;
     margin: 2rem;
 }
 
-.texto__titulo {
-    font-size: 4rem;
+.text__titulo {
+    font-size: 3rem;
     color: var(--verde);
     border-left: 1rem solid var(--verde);
     padding: 2rem;
     font-weight: 700;
     margin: 2rem;
+}
+
+
+/* edicao dos cards */
+
+.trails {
+    display: flex;
+    color: var(--branco);
+}
+
+.trails__cards {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--azul-claro1);
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.trails__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.trails__list {
+    list-style: disc;
+    padding: 2rem;
+}
+
+.trails__list-items {
+    padding: 1rem 0 1rem 0;
+}
+
+.trails__images {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.trails__images-items {
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+}
+
+#three {
+    display: flex;
+    height: 100%;
+    align-self: center;
+}
+
+#scratch {
+    width: 30rem;
+    height: 20rem;
+}
+
+#python {
+    width: 23rem;
+    height: 25rem;
+}
+
+
+/* rodape da pagina */
+
+.footer {
+    display: flex;
+    background-color: var(--azul-escuro2);
+    height: 100%;
+    padding: 4rem;
+    justify-content: space-around;
+}
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.social__links {
+    width: 6rem;
+    height: 6rem;
+}
+
+
+/* edicao da barra de rolagem */
+
+
+/* Works on Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cinza2)
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--cinza2);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--branco);
+    border-radius: 2rem;
+    border: .3rem solid var(--cinza2);
 }
