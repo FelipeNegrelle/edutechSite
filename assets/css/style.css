@@ -51,10 +51,29 @@ body {
     font-size: 2rem;
 }
 
-.main__titulo {
+.main__title {
     font-size: 3rem;
     padding: 5rem;
     font-weight: 700;
+}
+
+
+/* estilos da pagina trilhas */
+
+.main__list {
+    margin: 5rem 2rem;
+    align-self: center;
+    width: 80rem;
+}
+
+.main__list-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.main__list li {
+    padding: 1rem;
+    list-style-type: disc;
 }
 
 .text {
@@ -67,7 +86,7 @@ body {
     margin: 2rem;
 }
 
-.text__titulo {
+.text__title {
     font-size: 3rem;
     color: var(--verde);
     border-left: 1rem solid var(--verde);
@@ -92,6 +111,7 @@ body {
     background-color: var(--azul-claro1);
     border-radius: 2rem;
     margin: 2rem;
+    transition: ease 300ms;
 }
 
 .trails__title {
@@ -138,6 +158,16 @@ body {
     height: 25rem;
 }
 
+.trails__cards:hover {
+    border: .4rem solid var(--cinza2);
+    cursor: pointer;
+}
+
+.trails__cards:active {
+    border: .4rem solid var(--verde-claro);
+    cursor: pointer;
+}
+
 
 /* rodape da pagina */
 
@@ -170,16 +200,10 @@ body {
 
 /* edicao da barra de rolagem */
 
-
-/* Works on Firefox */
-
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--cinza2)
 }
-
-
-/* Works on Chrome, Edge, and Safari */
 
 *::-webkit-scrollbar {
     width: 1.2rem;
