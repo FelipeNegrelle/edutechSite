@@ -2,7 +2,6 @@ body {
     display: flex;
     font-size: 5rem;
     background-image: linear-gradient(to bottom, var(--azul-claro1), var(--azul-escuro));
-    /* background-color: #3f4123; */
     background-repeat: no-repeat;
     flex-direction: column;
     height: 100%;
@@ -202,7 +201,7 @@ body {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--cinza2)
+    scrollbar-color: var(--cinza2);
 }
 
 *::-webkit-scrollbar {
@@ -217,4 +216,66 @@ body {
     background-color: var(--branco);
     border-radius: 2rem;
     border: .3rem solid var(--cinza2);
+}
+
+
+/* editando a paginá de contato */
+
+.main__box {
+    margin: 2rem;
+}
+
+.main__box-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.form-input {
+    margin: 1rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+}
+
+.form-label {
+    color: black;
+}
+
+.form-button {
+    padding: 1rem 30%;
+    font-size: 3rem;
+    background-color: var(--verde-claro);
+    border: none;
+    border-radius: .6rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* fazendo os media queries */
+
+@media screen and (max-width: 768px) {
+    .header__nav-list {
+        flex-direction: column;
+    }
+    .main__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .text {
+        width: 100vw;
+    }
+    .text__title {
+        text-align: center;
+    }
+    .text p {
+        font-size: 2rem;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+    .trails__cards {
+        flex-direction: column;
+    }
 }
