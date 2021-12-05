@@ -1,3 +1,7 @@
+hmtl{
+    height: 100%;
+}
+
 body {
     display: flex;
     font-size: 5rem;
@@ -39,6 +43,9 @@ body {
     padding: 1rem;
 }
 
+.mobile {
+    display: none;
+}
 
 /* estilos relacionados a parte principal da página */
 
@@ -98,7 +105,7 @@ body {
 /* edicao dos cards */
 
 .trails {
-    display: flex;
+    display: block;
     color: var(--branco);
 }
 
@@ -141,10 +148,13 @@ body {
     padding: 1rem;
 }
 
+
+
 #three {
     display: flex;
     height: 100%;
     align-self: center;
+    margin-top: 8rem;
 }
 
 #scratch {
@@ -181,7 +191,7 @@ body {
 .companies {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 50rem;     
 }
 
 .social {
@@ -219,7 +229,7 @@ body {
 }
 
 
-/* editando a paginá de contato */
+/* editando a página de contato */
 
 .main__box {
     margin: 2rem;
@@ -254,28 +264,103 @@ body {
 }
 
 
-/* fazendo os media queries */
+/* fazendo os media queries para o responsivo */
 
 @media screen and (max-width: 768px) {
+    /* edicao do botao hamburger */
+
+    .mobile {
+        display: block;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+    /* cabeacalho responsivo
     .header__nav-list {
         flex-direction: column;
-    }
+    } */
+
+    /* parte principal responsiva */
     .main__title {
         font-size: 2rem;
         text-align: center;
+        padding: 2rem 0;
     }
+
     .text {
         width: 100vw;
+        border-radius: 0%;
+        margin: 0;
+        padding: 0;
     }
+
     .text__title {
         text-align: center;
     }
+
     .text p {
         font-size: 2rem;
         text-align: justify;
         padding: 0 1rem;
     }
+
+    /* cards responsivos */
+
     .trails__cards {
         flex-direction: column;
+        margin: 1rem;
     }
+
+    .trails__cards:hover {
+        border: none;
+        cursor: pointer;
+    }
+
+    /* rodape responsivo */
+
+    .companies, .companies__links, .social, .social__links {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .companies{
+        width: 20rem;
+    }
+
+    .companies__links {
+        padding: 1rem;
+    }
+
+    .social__links {
+        padding: 1rem;
+    }
+
+    /* responsivo da pagina de trilhas */
+
+    .main__list {
+        width: 100vw;
+    }
+
+    .main__list-title {
+        text-align: center;
+    }
+
+    /* responsivo da pagina de contato */
+
+    .main__box, .main__box-form{
+        margin: 0;
+    }
+
+    .main__box-form {
+        padding: 1rem 0;
+        border-radius: 0;
+        width: 100vw;
+    }
+
+    .form-button {
+        padding: 1rem;
+        border-radius: 0;
+    }
+
 }
