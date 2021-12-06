@@ -35,4 +35,4 @@ Se quiser colaborar com o projeto, sinta-se livre para fazer um fork deste repos
 
 ## Autor
 
-* **Felipe Negrelle** - *Estudante do ensino médio* - [Felipe Negrelle](https://github.com/felipenegrelle/) - *Built ReadME Template*
+* **Felipe Negrelle** - *Estudante do ensino médio* - [Felipe Negrelle](https://github.com/felipenegrelle/) - *Built with ReadME Template*
