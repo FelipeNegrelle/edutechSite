@@ -1,4 +1,4 @@
-hmtl{
+hmtl {
     height: 100%;
 }
 
@@ -20,6 +20,7 @@ body {
     justify-content: space-between;
     padding: 2rem;
     font-size: 3rem;
+    transition: ease 500ms;
 }
 
 .logo {
@@ -43,9 +44,6 @@ body {
     padding: 1rem;
 }
 
-.mobile {
-    display: none;
-}
 
 /* estilos relacionados a parte principal da página */
 
@@ -61,6 +59,10 @@ body {
     font-size: 3rem;
     padding: 5rem;
     font-weight: 700;
+}
+
+#checkbox-menu {
+    opacity: 0;
 }
 
 
@@ -148,8 +150,6 @@ body {
     padding: 1rem;
 }
 
-
-
 #three {
     display: flex;
     height: 100%;
@@ -191,7 +191,7 @@ body {
 .companies {
     display: flex;
     justify-content: space-between;
-    width: 50rem;     
+    width: 50rem;
 }
 
 .social {
@@ -267,100 +267,150 @@ body {
 /* fazendo os media queries para o responsivo */
 
 @media screen and (max-width: 768px) {
-    /* edicao do botao hamburger */
-
-    .mobile {
-        display: block;
-    }
-
+    /* estilos do botao mobile */
     .header__nav-list {
         display: none;
     }
-    /* cabeacalho responsivo
-    .header__nav-list {
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+    label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 2.2rem;
+        width: 3rem;
+    }
+    label span {
+        position: absolute;
+        display: block;
+        height: .5rem;
+        width: 100%;
+        border-radius: 3rem;
+        background: #ABDBAD;
+        transition: 0.25s ease-in-out;
+    }
+    label span:nth-child(1) {
+        top: 0;
+    }
+    label span:nth-child(2) {
+        top: .8rem;
+    }
+    label span:nth-child(3) {
+        top: 1.6rem;
+    }
+    #checkbox-menu:checked+label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: .8rem;
+    }
+    #checkbox-menu:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+    #checkbox-menu:checked+label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: .8rem;
+    }
+    /* 
+    *
+    */
+    .logo.checked {
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    .header.checked {
+        height: 200%;
         flex-direction: column;
-    } */
-
+        z-index: 1000;
+        transition: ease-in 300ms;
+    }
+    .header__nav-list.checked {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        margin-bottom: 60%;
+        background-color: var(--verde);
+    }
+    .header__nav-item.checked {
+        border-bottom: .1rem solid lavender;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    /* 
+    *
+    */
     /* parte principal responsiva */
     .main__title {
         font-size: 2rem;
         text-align: center;
         padding: 2rem 0;
     }
-
     .text {
         width: 100vw;
         border-radius: 0%;
         margin: 0;
         padding: 0;
     }
-
     .text__title {
         text-align: center;
     }
-
     .text p {
         font-size: 2rem;
         text-align: justify;
         padding: 0 1rem;
     }
-
     /* cards responsivos */
-
     .trails__cards {
         flex-direction: column;
         margin: 1rem;
     }
-
     .trails__cards:hover {
         border: none;
         cursor: pointer;
     }
-
     /* rodape responsivo */
-
-    .companies, .companies__links, .social, .social__links {
+    .companies,
+    .companies__links,
+    .social,
+    .social__links {
         flex-direction: column;
         margin: 0;
     }
-
-    .companies{
+    .companies {
         width: 20rem;
     }
-
     .companies__links {
         padding: 1rem;
     }
-
     .social__links {
         padding: 1rem;
     }
-
     /* responsivo da pagina de trilhas */
-
     .main__list {
         width: 100vw;
     }
-
     .main__list-title {
         text-align: center;
     }
-
     /* responsivo da pagina de contato */
-
-    .main__box, .main__box-form{
+    .main__box,
+    .main__box-form {
         margin: 0;
     }
-
     .main__box-form {
         padding: 1rem 0;
         border-radius: 0;
         width: 100vw;
     }
-
     .form-button {
         padding: 1rem;
         border-radius: 0;
     }
-
 }
